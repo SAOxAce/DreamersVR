@@ -6,3 +6,8 @@ Assets/Jennifer filter=lfs diff=lfs merge=lfs -text
 Assets/Jennifer/*.unity filter=lfs diff=lfs merge=lfs -text
 Assets/Jennifer/*.unitypackage filter=lfs diff=lfs merge=lfs -text
 Assets/Jennifer/*.fbx filter=lfs diff=lfs merge=lfs -text
+Assets/Jennifer/ao_1.fbx filter=lfs diff=lfs merge=lfs -text
+git[[:space:]]lfs[[:space:]]track[[:space:]]Assets/Jennifer/ao_1.fbx filter=lfs diff=lfs merge=lfs -text
+Assets/Jennifer/applescene.unity filter=lfs diff=lfs merge=lfs -text
+////////dd
+ filter=lfs diff=lfs merge=lfs -text
