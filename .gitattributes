@@ -5,3 +5,4 @@ Jennifer/ filter=lfs diff=lfs merge=lfs -text
 Assets/Jennifer filter=lfs diff=lfs merge=lfs -text
 Assets/Jennifer/*.unity filter=lfs diff=lfs merge=lfs -text
 Assets/Jennifer/*.unitypackage filter=lfs diff=lfs merge=lfs -text
+Assets/Jennifer/*.fbx filter=lfs diff=lfs merge=lfs -text
