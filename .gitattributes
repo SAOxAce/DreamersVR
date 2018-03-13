@@ -1,0 +1,5 @@
+*.fbx filter=lfs diff=lfs merge=lfs -text
+*.unity filter=lfs diff=lfs merge=lfs -text
+*.unitypackage filter=lfs diff=lfs merge=lfs -text
+Jennifer/ filter=lfs diff=lfs merge=lfs -text
+Assets/Jennifer filter=lfs diff=lfs merge=lfs -text
