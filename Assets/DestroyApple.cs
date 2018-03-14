@@ -17,6 +17,7 @@ public class DestroyApple : MonoBehaviour {
 
     public void DestroyObject()
     {
-        Destroy(apple);
+       Destroy(apple);
+      
     }
 }
