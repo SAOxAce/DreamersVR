@@ -17,7 +17,7 @@ public class Score : MonoBehaviour {
     {
         //counterStr = counter.ToString();
 		counterStr += 1;
-        text.text = "Score: " + counterStr;
+        //text.text = "Score: " + counterStr;
 
     }
 }
