@@ -11,12 +11,7 @@ public class ColorChange : MonoBehaviour {
 	void Start () {
         Invoke("TimerChanger", 1f);
     }
-
-    // Update is called once per frame
-    void Update () {
 		
-	}
-
     public void ColorChanger()
     {
         GetComponent<Renderer>().material = ripe;

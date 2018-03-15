@@ -6,20 +6,18 @@ using UnityEngine.UI;
 public class Score : MonoBehaviour {
     public Text text;
     //public int counter;
-    public string counterStr;
+	public int counterStr;
 
-	// Use this for initialization
-	void Start () {
-		
+	void Start ()
+	{
+		counterStr = 0;
+		ScoreChange ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-    public void ScoreChange()
+    void ScoreChange()
     {
         //counterStr = counter.ToString();
+		counterStr += 1;
         text.text = "Score: " + counterStr;
+
     }
 }
