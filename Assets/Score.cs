@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DestroyApple : MonoBehaviour {
-
-    public GameObject apple;
+public class Score : MonoBehaviour {
+    public Text text;
+    //public int counter;
+    public string counterStr;
 
 	// Use this for initialization
 	void Start () {
@@ -16,10 +17,9 @@ public class DestroyApple : MonoBehaviour {
 	void Update () {
 		
 	}
-
-    public void DestroyObject()
+    public void ScoreChange()
     {
-       Destroy(apple);
-      
+        //counterStr = counter.ToString();
+        text.text = "Score: " + counterStr;
     }
 }
