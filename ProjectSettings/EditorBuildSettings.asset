@@ -4,4 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Spring & Fall/Scene/applescene.unity
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Spring & Fall/Scene/garden_sample.unity
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Spring & Fall/Scene/garden_tutorial.unity
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Spring & Fall/Scene/MainMenu.unity
+    guid: 00000000000000000000000000000000
