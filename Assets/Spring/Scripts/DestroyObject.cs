@@ -6,7 +6,6 @@ public class DestroyObject : MonoBehaviour {
 
     public GameObject obj;
     
-
     public void DestroyThis ()
     {
         Destroy(obj);
