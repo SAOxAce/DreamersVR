@@ -2,20 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InvokeThenMoveOn : MonoBehaviour {
+public class HoleScript : MonoBehaviour {
     //////////HOLE MAKING////////
 
     int count = 0;
-    public GameObject createObj;
+    
     Vector3 rayPos;
     Vector3 totalPos;
+
+    public GameObject holeObj;
+    GameObject HoleClone;
+
+    public GameObject seedChosenObj;
+    GameObject cloneSeeds;
 
     public Collider holeCollider;
     public GameObject AllSeeds;
 
     //position of the cursor/reticle (which is the center of the screen)
     Vector3 centerPos = new Vector3(Screen.width * 0.5f, Screen.height * 0.5f, 0.0f);
-    GameObject HoleClone;
 
     //THIS FOR CREATING OBJECTS
     public void CreateOnClick()
@@ -54,8 +59,12 @@ public class InvokeThenMoveOn : MonoBehaviour {
 
         }
         //create object
-        HoleClone = Instantiate(createObj, totalPos, Quaternion.identity);
+        HoleClone = Instantiate(holeObj, totalPos, Quaternion.identity);
         HoleClone.transform.parent = GameObject.Find("HoleParent").transform;
+
+        cloneSeeds = Instantiate(seedChosenObj, totalPos, Quaternion.identity);
+        cloneSeeds.transform.parent = GameObject.Find("Seed_Parent").transform;
+        cloneSeeds.SetActive(false);
         //keeping count
         count++;
 
