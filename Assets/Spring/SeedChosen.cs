@@ -3,16 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SeedChosen : MonoBehaviour {
-    //after all seeds menu is activated, and click on seed1
-    //will deactivate everything else but this seed
+
+    /// <summary>
+    /// after all seeds menu is activated, and click on seed1
+    // will destroy everything else but this seed
+    // sets shovelalways on the floor to false but replaces with shovel1
+    // moves on to shovelNum (shovel1)
+    // Inactive prior: 
+    //  -Shovel1
+    /// </summary>
+
     public GameObject notChosen1;
     public GameObject notChosen2;
     public GameObject notChosen3;
     public GameObject notChosen4;
     public GameObject shovelNum;
     public GameObject shovelFloorAlways;
-
-    public GameObject PlantSeedsScript;
+    
 
     // Update is called once per frame
     public void ActivateChosen ()
@@ -22,14 +29,12 @@ public class SeedChosen : MonoBehaviour {
         Destroy(notChosen3);
         Destroy(notChosen4);
 
-        //Shovel1 originally set false
-        shovelNum.SetActive(true);
-
         //turn off static do nothing shovel (hide)
         shovelFloorAlways.SetActive(false);
 
+        //Shovel1 originally set false
+        shovelNum.SetActive(true);
         
     }
-   
-   
+      
 }

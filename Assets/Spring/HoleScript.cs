@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class HoleScript : MonoBehaviour {
     //////////HOLE MAKING////////
+    /// <summary>
+    /// makes holes until reaches max
+    /// ---makes seeds + stems + flowers
+    /// then activates allSeeds
+    /// 
+    /// inactive prior:
+    /// - AllSeeds
+    /// </summary>
 
     int count = 0;
     

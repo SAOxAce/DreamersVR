@@ -5,10 +5,19 @@ using UnityEngine;
 public class HoleScripting : MonoBehaviour {
     //////////HOLE MAKING////////
     /// <summary>
-    /// create: holes(active), seeds + stems + seedling + flowers (deactivated)
-    /// upon reaching max hole ==> make seeds visible (active)
-    /// </summary>
-
+    /// makes objs until reaches max
+    /// create: 
+    /// -holes(active), seeds + stems + seedling + flowers (deactivated)
+    /// reaches max:
+    /// -activates SeedParent object (makes seeds visible)
+    /// -SeedParent Object clickable w/script
+    /// -deactivates colliderHoleScript
+    /// 
+    /// inactive prior:
+    /// - seedParent
+    /// 
+    /// go to SeedParent1
+    
     int count = 0;
     
     Vector3 rayPos;
@@ -27,8 +36,9 @@ public class HoleScripting : MonoBehaviour {
     GameObject cloneFlowers;
 
     public Collider holeScriptCollider;
-    public GameObject AllSeeds;
+
     public GameObject parentSeedObj;
+    public GameObject parentSeedScript;
 
     //position of the cursor/reticle (which is the center of the screen)
     Vector3 centerPos = new Vector3(Screen.width * 0.5f, Screen.height * 0.5f, 0.0f);
@@ -62,10 +72,15 @@ public class HoleScripting : MonoBehaviour {
             
             //turn off this collider so can't click anymore and return
             holeScriptCollider.enabled = false;
-
+            
+            parentSeedObj.transform.GetChild(0).gameObject.SetActive(true);
+            parentSeedObj.transform.GetChild(1).gameObject.SetActive(true);
+            parentSeedObj.transform.GetChild(2).gameObject.SetActive(true);
+            parentSeedObj.transform.GetChild(3).gameObject.SetActive(true);
+            parentSeedObj.transform.GetChild(4).gameObject.SetActive(true);
 
             //activate SeedParent Script
-            parentSeedObj.SetActive(true);
+            parentSeedScript.SetActive(true);
 
             return;
 

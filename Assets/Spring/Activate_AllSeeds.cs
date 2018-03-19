@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Activate_AllSeeds : MonoBehaviour {
 
+    // activates menu seeds
+    //destroys allseeds on floor
+
     public GameObject allSeeds;
 	
 	// Update is called once per frame
